@@ -6,9 +6,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>React with Webpack 5</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+    <h1><%= htmlWebpackPlugin.options.title %></h1>
+
     <div id="app"></div>
   </body>
 </html>
