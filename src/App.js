@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './index.css';
+import './style.scss';
 
 const App = ({ title }) => (
-  <div className={styles.title}>
+  <div className={title}>
     <h1>{title}</h1>
   </div>
 );

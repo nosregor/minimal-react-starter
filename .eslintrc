@@ -10,10 +10,19 @@
     "react/jsx-filename-extension": [
       1,
       { "extensions": [".js", ".jsx"] }
-    ]
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.test.js", "**/webpack*.js"]
+      }
+    ],
+    "import/no-unresolved": [2, { "commonjs": false }]
   },
   "env": {
-    "browser": true
+    "browser": true,
+    "jest": true,
+    "node": true
   },
   "globals": {
     "document": false
